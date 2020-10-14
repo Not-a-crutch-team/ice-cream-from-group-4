@@ -65,15 +65,15 @@
   }
 }
 .quality__items:nth-child(1)::before {
-  background-image: url(/src/images/desktop/icon1.png);
+  background-image: url(./images/desktop/icon1.png);
   background-size: 33px;
 }
 .quality__items:nth-child(2)::before {
-  background-image: url(/src/images/desktop/icon2.png);
+  background-image: url(./images/desktop/icon2.png);
   background-size: 50px;
 }
 .quality__items:nth-child(3)::before {
-  background-image: url(/src/images/desktop/icon3.png);
+  background-image: url(./images/desktop/icon3.png);
   background-size: 44px;
 }
 .quality__text {
