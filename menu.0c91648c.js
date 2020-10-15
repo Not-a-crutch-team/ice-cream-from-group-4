@@ -117,83 +117,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../fonts/dmsans-regular-webfont.woff2":[["dmsans-regular-webfont.be611b76.woff2","fonts/dmsans-regular-webfont.woff2"],"fonts/dmsans-regular-webfont.woff2"],"./../fonts/dmsans-regular-webfont.woff":[["dmsans-regular-webfont.f8562f41.woff","fonts/dmsans-regular-webfont.woff"],"fonts/dmsans-regular-webfont.woff"],"./../fonts/DMSans-Regular.ttf":[["DMSans-Regular.51277dd6.ttf","fonts/DMSans-Regular.ttf"],"fonts/DMSans-Regular.ttf"],"./../fonts/dmsans-medium-webfont.woff2":[["dmsans-medium-webfont.5b4f4aef.woff2","fonts/dmsans-medium-webfont.woff2"],"fonts/dmsans-medium-webfont.woff2"],"./../fonts/dmsans-medium-webfont.woff":[["dmsans-medium-webfont.ddee6f9c.woff","fonts/dmsans-medium-webfont.woff"],"fonts/dmsans-medium-webfont.woff"],"./../fonts/DMSans-Medium.ttf":[["DMSans-Medium.4e4c8d12.ttf","fonts/DMSans-Medium.ttf"],"fonts/DMSans-Medium.ttf"],"./../fonts/dmsans-bold-webfont.woff2":[["dmsans-bold-webfont.9de52924.woff2","fonts/dmsans-bold-webfont.woff2"],"fonts/dmsans-bold-webfont.woff2"],"./../fonts/dmsans-bold-webfont.woff":[["dmsans-bold-webfont.d3aaed53.woff","fonts/dmsans-bold-webfont.woff"],"fonts/dmsans-bold-webfont.woff"],"./../fonts/DMSans-Bold.ttf":[["DMSans-Bold.0d25dc20.ttf","fonts/DMSans-Bold.ttf"],"fonts/DMSans-Bold.ttf"],"./../fonts/titanone-regular-webfont.woff2":[["titanone-regular-webfont.a8ce662b.woff2","fonts/titanone-regular-webfont.woff2"],"fonts/titanone-regular-webfont.woff2"],"./../fonts/titanone-regular-webfont.woff":[["titanone-regular-webfont.ce28ff74.woff","fonts/titanone-regular-webfont.woff"],"fonts/titanone-regular-webfont.woff"],"./../fonts/TitanOne-Regular.ttf":[["TitanOne-Regular.c4ed25d0.ttf","fonts/TitanOne-Regular.ttf"],"fonts/TitanOne-Regular.ttf"],"./../images/header-hero/menu-vector-arrow.svg":[["menu-vector-arrow.f0941644.svg","images/header-hero/menu-vector-arrow.svg"],"images/header-hero/menu-vector-arrow.svg"],"./../images/phone/slider-pic7.png":[["slider-pic7.43cc47b1.png","images/phone/slider-pic7.png"],"images/phone/slider-pic7.png"],"./../images/phone/ellipse-hero.png":[["ellipse-hero.a766d0fc.png","images/phone/ellipse-hero.png"],"images/phone/ellipse-hero.png"],"./../images/tablet/slider-pic7.png":[["slider-pic7.20dfbc4d.png","images/tablet/slider-pic7.png"],"images/tablet/slider-pic7.png"],"./../images/tablet/ellipse-hero-tab.png":[["ellipse-hero-tab.6e94a2a5.png","images/tablet/ellipse-hero-tab.png"],"images/tablet/ellipse-hero-tab.png"],"./../images/desktop/slider-pic7.png":[["slider-pic7.c7410162.png","images/desktop/slider-pic7.png"],"images/desktop/slider-pic7.png"],"./../images/desktop/ellipse-hero-desk.png":[["ellipse-hero-desk.c5f7bea4.png","images/desktop/ellipse-hero-desk.png"],"images/desktop/ellipse-hero-desk.png"],"/Users/ivdaskova/Documents/GitHub/ice-cream-from-group-4/src/images/desktop/element.png":[["element.98f36b97.png","images/desktop/element.png"],"images/desktop/element.png"],"./../images/milk.png":[["milk.0a0970c7.png","images/milk.png"],"images/milk.png"],"./../images/milk-320.png":[["milk-320.f3d84efc.png","images/milk-320.png"],"images/milk-320.png"],"./../images/desktop/contacts-bg.png":[["contacts-bg.c184ff45.png","images/desktop/contacts-bg.png"],"images/desktop/contacts-bg.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"js/menu.js":[function(require,module,exports) {
+(function () {
+  var menuBtnRef = document.querySelector("[data-menu-button]");
+  var mobileMenuRef = document.querySelector("[data-menu]");
+  menuBtnRef.addEventListener("click", function () {
+    var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.toggle("is-open");
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+    mobileMenuRef.classList.toggle("is-open");
+  });
+})();
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +332,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/menu.js"], null)
+//# sourceMappingURL=/menu.0c91648c.js.map
