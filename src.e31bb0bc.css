@@ -652,6 +652,132 @@ button {
   color: #d41443;
 }
 
+.quality {
+  background-color: #fff5f6;
+  margin-right: 0px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .quality {
+    padding-top: 33px;
+  }
+}
+@media (min-width: 1280px) {
+  .quality {
+    padding-top: 20px;
+  }
+}
+
+.quality__list {
+  padding-left: 20px;
+  padding-bottom: 97px;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .quality__list {
+    display: flex;
+    padding-left: 36px;
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 1280px) {
+  .quality__list {
+    padding-left: 115px;
+  }
+}
+
+.quality__items {
+  list-style-type: none;
+}
+
+.quality__items:not(:last-child) {
+  margin-bottom: 38px;
+}
+@media (min-width: 768px) {
+  .quality__items:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .quality__items:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.quality__title {
+  margin-bottom: 16px;
+  width: 98px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+@media (min-width: 768px) {
+  .quality__title {
+    width: 147px;
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
+.quality__items svg {
+  fill: palevioletred;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .quality__items svg {
+    margin-bottom: 36px;
+  }
+}
+
+.quality__text {
+  margin-bottom: 0px;
+  width: 230px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .quality__text {
+    width: 180px;
+    font-size: 14px;
+    line-height: 174%;
+  }
+}
+@media (min-width: 1280px) {
+  .quality__text {
+    width: 330px;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+}
+
+.gallery {
+  background: linear-gradient(180deg, #fff5f6 40%, white 40%, white 100%);
+}
+
+.gallery__title {
+  display: none;
+}
+
+.gallery__picture {
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .gallery__picture {
+    padding-bottom: 60px;
+  }
+}
+
 .reviews {
   padding-top: 80px;
   padding-bottom: 86px;
