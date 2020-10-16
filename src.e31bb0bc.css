@@ -305,7 +305,7 @@ ul {
 }
 @media (min-width: 772px) {
   .container {
-    width: 768px;
+    width: 772px;
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -684,7 +684,7 @@ button {
 }
 @media (min-width: 772px) {
   .products__container {
-    width: 768px;
+    width: 772px;
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -1057,7 +1057,7 @@ button {
 }
 
 .gallery__title {
-  display: none;
+  visibility: hidden;
 }
 
 .gallery__picture {
