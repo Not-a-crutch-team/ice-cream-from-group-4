@@ -124,13 +124,15 @@ var swiper = new Swiper('.swiper-container', {
   spaceBetween: 20,
   slidesPerView: 1,
   loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
+    bulletClass: 'swiper-pagination-bulletmy',
+    bulletActiveClass: 'swiper-pagination-bullet-activemy'
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -165,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59142" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61082" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

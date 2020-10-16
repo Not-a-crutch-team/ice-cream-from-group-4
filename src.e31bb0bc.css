@@ -220,7 +220,7 @@ button {
 .button:hover {
   background: #c7133e;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button {
     width: 190px;
     padding: 12px 44px 12px 30px;
@@ -234,7 +234,7 @@ button {
   height: 30px;
   fill: #ffffff;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button__icon {
     right: 20px;
     bottom: 7px;
@@ -258,7 +258,7 @@ button {
   text-align: center;
   outline: none;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button__white {
     width: 170px;
     padding: 12px 50px 12px 38px;
@@ -273,7 +273,7 @@ button {
   height: 30px;
   fill: #d41443;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button__white .button__icon {
     right: 20px;
   }
@@ -327,9 +327,9 @@ ul {
     padding-right: 20px;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .container {
-    width: 772px;
+    width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -355,7 +355,7 @@ ul {
     padding-bottom: 4px;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .header-page {
     padding-top: 36px;
     padding-bottom: 8px;
@@ -454,7 +454,7 @@ ul {
     transition: 0.5s ease-in-out;
   }
 }
-@media (max-width: 1279px) and (min-width: 772px) {
+@media (max-width: 1279px) and (min-width: 768px) {
   .header__menu-container {
     width: 33%;
   }
@@ -472,7 +472,7 @@ ul {
   }
 }
 
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .header__menu-container {
     display: flex;
     justify-content: space-between;
@@ -527,7 +527,7 @@ ul {
     padding-left: 20px;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .site-nav__item {
     padding-left: 24px;
   }
@@ -574,7 +574,7 @@ ul {
 .buynow-menu {
   padding: 12px 58px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .buynow-menu {
     padding: 10px 43px;
   }
@@ -593,7 +593,7 @@ ul {
   display: none;
   padding: 11px 37px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .buynow-header {
     display: flex;
     margin-left: 30px;
@@ -609,7 +609,7 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .header__btn-buy-now-after {
     padding-left: 34px;
     padding-right: 34px;
@@ -685,7 +685,7 @@ button {
 .button:hover {
   background: #c7133e;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button {
     width: 190px;
     padding: 12px 44px 12px 30px;
@@ -699,7 +699,7 @@ button {
   height: 30px;
   fill: #ffffff;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button__icon {
     right: 20px;
     bottom: 7px;
@@ -723,7 +723,7 @@ button {
   text-align: center;
   outline: none;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button__white {
     width: 170px;
     padding: 12px 50px 12px 38px;
@@ -738,7 +738,7 @@ button {
   height: 30px;
   fill: #d41443;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button__white .button__icon {
     right: 20px;
   }
@@ -758,7 +758,7 @@ button {
     background-repeat: no-repeat;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .hero {
     margin-top: 0;
     height: 399px;
@@ -785,7 +785,7 @@ button {
   color: #ffffff;
   text-transform: uppercase;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .hero__title {
     font-size: 22px;
     font-weight: normal;
@@ -843,12 +843,12 @@ button {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 767px) {
   .hero__block {
     display: none;
   }
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .hero__block {
     display: block;
     margin-top: 19px;
@@ -874,12 +874,12 @@ button {
   padding-top: 19px;
 }
 
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 767px) {
   .hero__places {
     display: none;
   }
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .hero__places {
     display: block;
     min-width: 202px;
@@ -895,7 +895,7 @@ button {
 .hero__box {
   background-color: #ffb8ca;
 }
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 767px) {
   .hero__box {
     background-image: url(/ellipse-hero-mob.f4a5328f.png);
     background-size: 346px 344px;
@@ -903,7 +903,7 @@ button {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .hero__box {
     display: flex;
     background-image: url(/ellipse-hero-tab.6e94a2a5.png);
@@ -960,7 +960,7 @@ button {
     padding-right: 20px;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .products__container {
     min-width: 768px;
     width: 768px;
@@ -1238,7 +1238,7 @@ button {
   padding-right: 20px;
   padding-bottom: 97px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .quality {
     padding-top: 33px;
   }
@@ -1259,7 +1259,7 @@ button {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .quality__list {
     flex-wrap: nowrap;
     padding-left: 36px;
@@ -1279,7 +1279,7 @@ button {
 .quality__items:not(:last-child) {
   margin-bottom: 38px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .quality__items:not(:last-child) {
     margin-bottom: 0px;
     margin-right: 60px;
@@ -1303,7 +1303,7 @@ button {
   text-transform: uppercase;
   color: #d41443;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .quality__title {
     width: 147px;
     font-size: 58px;
@@ -1315,7 +1315,7 @@ button {
   fill: palevioletred;
   margin-bottom: 16px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .quality__items svg {
     margin-bottom: 36px;
   }
@@ -1331,7 +1331,7 @@ button {
   line-height: 170%;
   color: #000000;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .quality__text {
     width: 180px;
     font-size: 14px;
@@ -1360,7 +1360,7 @@ button {
   justify-content: center;
   padding-bottom: 40px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .gallery__picture {
     padding-bottom: 60px;
   }
@@ -1784,7 +1784,7 @@ img {
   padding-bottom: 80px;
   background: linear-gradient(180deg, white 9%, #fff5f6 9%);
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .contacts {
     background: linear-gradient(180deg, white 18%, #fff5f6 13%);
   }
@@ -1792,13 +1792,13 @@ img {
 .contacts__flexbox {
   margin-bottom: 54px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .contacts__flexbox {
     display: flex;
     margin-bottom: 86px;
   }
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .contacts {
     padding-left: 34px;
     padding-right: 34px;
@@ -1816,7 +1816,7 @@ img {
   border-radius: 24px;
   margin-bottom: 20px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .contacts__card {
     width: calc((100% - 20px * 2) / 3);
   }
@@ -1832,7 +1832,7 @@ img {
 .contacts__content {
   padding: 43px 20px;
 }
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .contacts__content {
     padding: 50px 30px;
   }
@@ -1901,14 +1901,14 @@ img {
   margin-bottom: 10px;
 }
 
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .contacts .button:not(:last-child),
 .button__white:not(:last-child) {
     margin-right: 15px;
   }
 }
 
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .button-group {
     display: flex;
     justify-content: center;
