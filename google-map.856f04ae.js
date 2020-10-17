@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/google-map.js":[function(require,module,exports) {
-// function initMap(): new {
+// function initMap(): void {
 //     // The location of Uluru
 //     const uluru = { lat: -25.344, lng: 131.036 };
 //     // The map, centered at Uluru
@@ -129,6 +129,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 //         center: uluru,
 //       }
 //     );
+//     // The marker, positioned at Uluru
+//     const marker = new google.maps.Marker({
+//       position: uluru,
+//       map: map,
+//     });
+// }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -157,7 +163,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60401" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51111" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
