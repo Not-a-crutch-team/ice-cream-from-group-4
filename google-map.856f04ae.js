@@ -117,17 +117,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/menu.js":[function(require,module,exports) {
-(function () {
-  var menuBtnRef = document.querySelector("[data-menu-button]");
-  var mobileMenuRef = document.querySelector("[data-menu]");
-  menuBtnRef.addEventListener("click", function () {
-    var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-    mobileMenuRef.classList.toggle("is-open");
-  });
-})();
+})({"js/google-map.js":[function(require,module,exports) {
+// function initMap(): new {
+//     // The location of Uluru
+//     const uluru = { lat: -25.344, lng: 131.036 };
+//     // The map, centered at Uluru
+//     const map = new google.maps.Map(
+//       document.getElementById("map") as HTMLElement,
+//       {
+//         zoom: 4,
+//         center: uluru,
+//       }
+//     );
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -332,5 +333,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/menu.js"], null)
-//# sourceMappingURL=/menu.0c91648c.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/google-map.js"], null)
+//# sourceMappingURL=/google-map.856f04ae.js.map
