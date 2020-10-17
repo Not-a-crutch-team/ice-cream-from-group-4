@@ -1074,7 +1074,61 @@ ul {
   border-radius: 50px;
 }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 319.5px) {
+  .products__headingtext {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  .products__headingtitle {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  .products__list {
+    padding-top: 144px;
+  }
+  .products__item {
+    width: 100%;
+    height: 485px;
+  }
+  .products__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+  .products__title::after {
+    top: 214px;
+  }
+  .products__img {
+    max-width: 249px;
+    width: 100%;
+    max-height: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -113px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .products__title {
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 70px;
+    padding-top: 160px;
+  }
+  .products__text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .mini-button {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.5px) {
   .products__headingtext {
     font-size: 18px;
     line-height: 1.17;
@@ -2505,6 +2559,7 @@ html {
 }
 
 .modals {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2536,18 +2591,26 @@ html {
 }
 
 .modals_body {
-  min-height: 100%;
   transition: 0.5s 0s;
   padding: 30px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s 0s;
 }
 
 .modal-content {
   background: white;
   max-width: 600px;
+  max-height: 600px;
   padding: 30px;
+  border-radius: 10px;
+}
+
+.modal-wrap {
+  flex: 1;
+  width: 100%;
+  max-width: 50em;
 }
 
 .close {
@@ -2575,7 +2638,6 @@ html {
 
 .modal__title {
   font-family: "Titan One";
-  margin-top: 20px;
   text-align: center;
   color: #d41443;
 }
@@ -2585,7 +2647,6 @@ html {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 60px;
 }
 
 .modal__items {
@@ -2669,7 +2730,7 @@ html {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  color: black;
+  color: gray;
   font-size: 18px;
   border-radius: 5px;
   line-height: 12px;
@@ -2679,6 +2740,7 @@ html {
   padding: 13px;
   margin-bottom: 15px;
   width: 300px;
+  height: 50px;
   box-sizing: border-box;
   outline: 0;
 }
@@ -2688,8 +2750,8 @@ html {
 }
 
 textarea {
-  height: 150px;
-  line-height: 150%;
+  height: 250px;
+  line-height: 1.8;
   resize: none;
 }
 
