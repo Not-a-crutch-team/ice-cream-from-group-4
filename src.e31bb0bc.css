@@ -996,6 +996,7 @@ button {
   height: 18px;
   background: #fafafa;
   border-radius: 50%;
+  outline: none;
 }
 @media screen and (min-width: 1280px) {
   .hero__block-btn {
@@ -2108,6 +2109,11 @@ button {
   padding-bottom: 80px;
   background: linear-gradient(180deg, white 9%, #fff5f6 9%);
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts {
+    background: linear-gradient(180deg, white 18%, #fff5f6 13%);
+  }
+}
 @media (min-width: 1280px) {
   .contacts {
     background-image: url(/contacts-bg.c184ff45.png), linear-gradient(180deg, white 20%, #fff5f6 13%);
@@ -2116,15 +2122,10 @@ button {
     background-size: auto;
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
     background-image: url(/contacts-bg@2x.2f94ef27.png), linear-gradient(180deg, white 20%, #fff5f6 13%);
     background-position-y: 35%;
-  }
-}
-@media (max-width: 1279px) {
-  .contacts {
-    background: linear-gradient(180deg, white 18%, #fff5f6 13%);
   }
 }
 @media (max-width: 767px) {
@@ -2177,6 +2178,10 @@ button {
   color: #907e82;
   font-size: 12px;
   line-height: 1.5;
+}
+.contacts__text--hover:hover, .contacts__text--hover:focus {
+  outline: none;
+  color: #d41443;
 }
 
 .contacts__item:not(:last-child) {
