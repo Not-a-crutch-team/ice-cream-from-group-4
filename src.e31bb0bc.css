@@ -764,8 +764,8 @@ button {
 
 .home {
   background-color: #ffb8ca;
-  margin-top: 60px;
-  height: 442px;
+  height: 502px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .home {
@@ -786,7 +786,8 @@ button {
     background-position: 34px 23px;
     background-repeat: no-repeat;
     margin-right: 0;
-    height: 442px;
+    height: 502px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) {
@@ -817,7 +818,8 @@ button {
     background-size: 171px 410px;
     background-position: 117px 32px;
     background-repeat: no-repeat;
-    height: 442px;
+    height: 502px;
+    overflow: hidden;
   }
 }
 @media (min-width: 768px) {
@@ -995,6 +997,12 @@ button {
   transform: translate(-50%, -50%);
   fill: #d41443;
 }
+@media screen and (min-width: 1280px) {
+  .hero__block-icon {
+    width: 10px;
+    height: 10px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .hero__places {
@@ -1101,7 +1109,7 @@ button {
   .hero__places-circle2 {
     width: 30px;
     height: 30px;
-    top: 76px;
+    top: 84px;
   }
 }
 
@@ -1197,6 +1205,12 @@ button {
   fill: #d41443;
   width: 11px;
   height: 9px;
+}
+@media screen and (min-width: 1280px) {
+  .products__icon {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .mini-button {
