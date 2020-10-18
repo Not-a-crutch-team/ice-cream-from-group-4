@@ -130,6 +130,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   function toggleModal() {
     refs.overflow.classList.toggle('modal-open');
   }
+})();
+
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal2-open]'),
+    closeModalBtn: document.querySelector('[data-modal2-close]'),
+    overflow: document.querySelector('[data-overflow]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.overflow.classList.toggle('modal-open');
+  }
 })(); // Скрипт что бы при открытии меню не двигалось боди
 
 
@@ -174,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51311" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49334" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
