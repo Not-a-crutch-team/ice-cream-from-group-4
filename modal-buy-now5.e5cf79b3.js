@@ -117,20 +117,36 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/modal-franchise.js":[function(require,module,exports) {
-(function () {
-  var refs = {
-    openModalBtn: document.querySelector('[data-modal2-open]'),
-    closeModalBtn: document.querySelector('[data-modal2-close]'),
-    modal: document.querySelector('[data-modal2]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+})({"js/modal-buy-now5.js":[function(require,module,exports) {
+var num = 15;
+var modalBtn = document.querySelector('.open5');
+var closeBtn = document.querySelector('.close');
+var modalContainer = document.querySelector('.modals');
+var holdModals = document.createDocumentFragment();
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hiddeniv');
-  }
-})();
+for (var i = 0; i < num; i++) {
+  var div = document.createElement('div');
+  div.classList.add('modal-drop');
+  div.style.top = Math.floor(Math.random() * 100) + 'vh';
+  div.style.left = Math.floor(Math.random() * 100) + 'vw';
+  div.style.transitionDelay = Math.random() + 's';
+  holdModals.appendChild(div);
+}
+
+console.log();
+modalContainer.appendChild(holdModals);
+modalBtn.addEventListener('click', function () {
+  modalContainer.style.display = 'block';
+  window.setTimeout(function () {
+    modalContainer.classList.add('active');
+  }, 0.1);
+});
+closeBtn.addEventListener('click', function () {
+  modalContainer.classList.remove('active');
+  window.setTimeout(function () {
+    modalContainer.style.display = 'none';
+  }, 3000);
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -335,4 +351,4 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal-franchise.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal-buy-now5.js"], null)
