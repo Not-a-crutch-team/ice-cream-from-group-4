@@ -291,7 +291,6 @@ body {
 @media all and (min-width: 320px) {
   body {
     overflow-x: hidden;
-    overflow-y: hidden;
   }
 }
 
