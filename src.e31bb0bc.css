@@ -291,6 +291,7 @@ body {
 @media all and (min-width: 320px) {
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
@@ -390,12 +391,16 @@ ul {
   .header-container {
     padding-left: 34px;
     padding-right: 34px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1280px) {
   .header-container {
     padding-left: 46px;
     padding-right: 46px;
+    width: 1280px;
   }
 }
 
@@ -540,6 +545,10 @@ ul {
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: #d41443;
+  animation: jello;
+  animation-duration: 100s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
 }
 .site-nav__item {
   border-top: 1px solid #E18298;
@@ -833,6 +842,7 @@ ul {
     background-size: 124px 126px;
     background-position: 0px -28px;
     background-repeat: no-repeat;
+    height: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1028,7 +1038,7 @@ ul {
   color: #fea5bb;
   letter-spacing: 0.04em;
   animation: bounce;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-delay: 4s;
   animation-fill-mode: backwards;
 }
@@ -1039,7 +1049,7 @@ ul {
   color: #d41443;
   letter-spacing: 0.04em;
   animation: bounce;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-delay: 5s;
   animation-fill-mode: backwards;
 }
@@ -1378,7 +1388,7 @@ ul {
   margin-bottom: 15px;
   color: #FFA5BA;
   animation: bounce;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-delay: 8s;
   animation-fill-mode: backwards;
 }
@@ -1407,7 +1417,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 26px;
   animation: bounce;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-delay: 9s;
   animation-fill-mode: backwards;
 }
@@ -1634,7 +1644,7 @@ ul {
   text-transform: uppercase;
   color: #d41443;
   animation: flip;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-delay: 12s;
   animation-fill-mode: forwards;
 }
@@ -1688,7 +1698,7 @@ ul {
 
 .gallery {
   width: 100%;
-  max-width: 1600px;
+  max-width: 520px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
@@ -1702,6 +1712,12 @@ ul {
 @media (min-width: 768px) {
   .gallery {
     padding-bottom: 60px;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    max-width: 1280px;
   }
 }
 
@@ -2252,7 +2268,7 @@ ul {
 
 .footer__titles {
   animation: flash;
-  animation-duration: 6s;
+  animation-duration: 20s;
   animation-delay: 16s;
   animation-fill-mode: backwards;
 }
