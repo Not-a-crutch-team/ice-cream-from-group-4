@@ -384,6 +384,9 @@ ul {
   .header-container {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 768px) {
@@ -460,9 +463,9 @@ ul {
 }
 
 .header-page__logo {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
   fill: #ffffff;
   background: #d41443;
   border-radius: 50%;
@@ -546,8 +549,7 @@ ul {
 .site-nav__link:hover, .site-nav__link:focus {
   color: #d41443;
   animation: jello;
-  animation-duration: 100s;
-  animation-delay: 0s;
+  animation-duration: 1000s;
   animation-fill-mode: both;
 }
 .site-nav__item {
@@ -1038,8 +1040,9 @@ ul {
   color: #fea5bb;
   letter-spacing: 0.04em;
   animation: bounce;
-  animation-duration: 10s;
-  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 10;
   animation-fill-mode: backwards;
 }
 .products__headingtitle {
@@ -1049,8 +1052,8 @@ ul {
   color: #d41443;
   letter-spacing: 0.04em;
   animation: bounce;
-  animation-duration: 10s;
-  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
   animation-fill-mode: backwards;
 }
 .products__ice-cream {
@@ -1388,8 +1391,9 @@ ul {
   margin-bottom: 15px;
   color: #FFA5BA;
   animation: bounce;
-  animation-duration: 10s;
-  animation-delay: 8s;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 10;
   animation-fill-mode: backwards;
 }
 @media screen and (min-width: 768px) {
@@ -1417,8 +1421,8 @@ ul {
   text-transform: uppercase;
   margin-bottom: 26px;
   animation: bounce;
-  animation-duration: 10s;
-  animation-delay: 9s;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
   animation-fill-mode: backwards;
 }
 @media screen and (min-width: 768px) {
@@ -1644,8 +1648,8 @@ ul {
   text-transform: uppercase;
   color: #d41443;
   animation: flip;
-  animation-duration: 10s;
-  animation-delay: 12s;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
   animation-fill-mode: forwards;
 }
 @media (min-width: 768px) {
@@ -2268,8 +2272,8 @@ ul {
 
 .footer__titles {
   animation: flash;
-  animation-duration: 20s;
-  animation-delay: 16s;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
   animation-fill-mode: backwards;
 }
 
