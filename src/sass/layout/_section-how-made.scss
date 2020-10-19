@@ -1,4 +1,4 @@
-.how-made {
+.сow-made {
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: $color-bcg-light-pink;
@@ -21,11 +21,11 @@
     background-size: contain;
   }
 }
-.how-made__container {
+.сow-made__container {
   @extend .container;
   text-align: center;
 }
-.how-made__subtitle {
+.сow-made__subtitle {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 18px;
@@ -49,7 +49,7 @@
     line-height: 1.13;
   }
 }
-.how-made__title {
+.сow-made__title {
   color: $color-accent-text;
   font-family: 'Titan One';
   font-weight: 400;
@@ -72,12 +72,12 @@
     margin-bottom: 55px;
   }
 }
-.how-made__content {
+.сow-made__content {
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-.how-made__img {
+.сow-made__img {
   @media screen and (min-width: 768px) {
     min-width: 340px;
     margin-right: 17px;
@@ -91,7 +91,7 @@
     }
   }
 }
-.how-made__box {
+.сow-made__box {
   text-align: left;
   font-size: 12px;
   line-height: 1.62;
@@ -113,8 +113,8 @@
     letter-spacing: 0.04em;
   }
 }
-.how-made__description,
-.how-made__text {
+.сow-made__description,
+.сow-made__text {
   line-height: 1.58;
   color: $color-grey-text;
   @media screen and (min-width: 1280px) {
@@ -122,7 +122,7 @@
       letter-spacing: 0.03em;
   }
 }
-.how-made__description {
+.сow-made__description {
   margin-top: 35px;
   @media screen and (min-width: 768px) {
       margin-top: 24px;
@@ -131,7 +131,7 @@
       margin-top: 32px;
   }
 }
-.how-made__text {
+.сow-made__text {
   margin-top: 12px;
   @media screen and (min-width: 768px) {
       margin-top: 14px;
@@ -140,12 +140,12 @@
       margin-top: 36px;
   }
 }
-.how-made--break {
+.сow-made--break {
     @media screen and (max-width: 767px) {
         display: block;
     }
 }
-.how-made__btn {
+.сow-made__btn {
   @extend .link;
   display: inline-flex;
   align-items: center;
@@ -178,7 +178,7 @@
   margin-top: 45px;
   }
 }
-.how-made__icon {
+.сow-made__icon {
   margin-left: 13px;
   width: 6px;
   height: 10px;
