@@ -123,14 +123,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
+  }; // refs.openModalBtn.addEventListener('click', toggleModal);
+
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', function () {
+    refs.modal.classList.add('is-open');
+    refs.modal.classList.remove('is-hidden');
+  });
+  refs.closeModalBtn.addEventListener('click', function () {
+    refs.modal.classList.remove('is-open');
+    refs.modal.classList.add('is-hidden');
+  });
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+document.addEventListener('click', function (e) {
+  var modal = document.querySelector('[data-modal]');
+  var menuBtnRef = document.querySelector('[data-modal-close]');
+
+  if (modal.classList.contains('is-open') && !e.target.closest('.modal') && !e.target.closest('[data-modal-open]')) {
+    var event = new Event('click');
+    menuBtnRef.dispatchEvent(event);
+  }
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -159,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62430" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49588" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

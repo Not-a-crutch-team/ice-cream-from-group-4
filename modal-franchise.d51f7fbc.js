@@ -123,14 +123,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     openModalBtn: document.querySelector('[data-modal2-open]'),
     closeModalBtn: document.querySelector('[data-modal2-close]'),
     modal: document.querySelector('[data-modal2]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
+  }; // refs.openModalBtn.addEventListener('click', toggleModal);
+
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', function () {
+    refs.modal.classList.add('is-openiv');
+    refs.modal.classList.remove('is-hiddeniv');
+  });
+  refs.closeModalBtn.addEventListener('click', function () {
+    refs.modal.classList.remove('is-openiv');
+    refs.modal.classList.add('is-hiddeniv');
+  });
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hiddeniv');
+    refs.modal.classList.add('is-hiddeniv');
   }
 })();
+
+document.addEventListener('click', function (e) {
+  var modal = document.querySelector('[data-modal2]');
+  var menuBtnRef = document.querySelector('[data-modal2-close]');
+
+  if (modal.classList.contains('is-openiv') && !e.target.closest('.franchise__modal') && !e.target.closest('[data-modal2-open]')) {
+    var event = new Event('click');
+    menuBtnRef.dispatchEvent(event);
+  }
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -159,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62430" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49588" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -3,6 +3,20 @@
 Главный файл стилей.
 Все паршалы подключаются сюда.
  */
+.cow-button, .site-nav__link, .logo-title {
+  text-decoration: none;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
 ::after,
@@ -162,10 +176,10 @@ summary {
   font-weight: 400;
   src: local("Titan One"), local("TitanOne"), url("/titanone-regular-webfont.a8ce662b.woff2") format("woff2"), url("/titanone-regular-webfont.ce28ff74.woff") format("woff"), url("/TitanOne-Regular.c4ed25d0.ttf") format("truetype");
 }
-.site-nav__link, .logo-title {
+.cow-button, .site-nav__link, .logo-title {
   text-decoration: none;
   cursor: pointer;
-  transition-property: color;
+  transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -540,6 +554,7 @@ ul {
 @media (min-width: 1280px) {
   .btn-menu-container {
     flex-direction: row-reverse;
+    align-items: center;
   }
 }
 
@@ -1379,6 +1394,258 @@ ul {
     margin-bottom: 50px;
   }
 }
+.cow {
+  padding: 125px 0 0 0;
+  margin: 0;
+  color: #907e82;
+  font-family: "DM Sans";
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  overflow-x: hidden;
+}
+
+.cow--background {
+  background-color: #fff5f6;
+}
+
+.cow__title {
+  margin: 0 20px 26px 20px;
+  text-align: center;
+  color: #d41443;
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .cow__title {
+    margin: 0 0 50px 0;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow__title {
+    margin-bottom: 55px;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.cow-container {
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .cow-container {
+    background-image: url(/milk-320.f3d84efc.png);
+    background-size: contain;
+    background-position: 0 91%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 320px) {
+  .cow-container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cow-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow-container {
+    width: 1280px;
+    background-image: url(/milk.0a0970c7.png);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
+
+.cow-container__title {
+  margin-bottom: 15px;
+  color: #FFA5BA;
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cow-container__title {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow-container__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.cow-about {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .cow-about {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+img {
+  width: inherit;
+}
+
+@media screen and (min-width: 320px) {
+  .cow-container__img {
+    width: 280px;
+    height: 279px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cow-container__img {
+    margin: 0 17px 0 39px;
+    width: 340px;
+    height: 339px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow-container__img {
+    margin: 0 74px 0 112px;
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.cow-container__description {
+  display: block;
+  padding: 46px 50px 40px 50px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  letter-spacing: 0em;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .cow-container__description {
+    padding: 50px 36px 36px 0;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow-container__description {
+    padding: 51px 117px 35px 0;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.cow-container__information {
+  display: block;
+  padding: 0 50px 0 50px;
+}
+@media screen and (min-width: 768px) {
+  .cow-container__information {
+    padding: 0 36px 45px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow-container__information {
+    padding: 0 117px 0 0;
+  }
+}
+
+.cow-container__text {
+  display: block;
+  padding-bottom: 17px;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .cow-container__text {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cow-container__text {
+    padding-bottom: 45px;
+    line-height: 1.94;
+  }
+}
+
+.break {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .break {
+    display: inline;
+  }
+}
+
+.button-position {
+  display: flex;
+  margin-bottom: 39px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .button-position {
+    margin-bottom: 66px;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button-position {
+    margin-bottom: 146px;
+  }
+}
+
+.cow-button {
+  display: flex;
+  padding: 0;
+  width: 176px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  background-color: #ffffff;
+  color: #d41443;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+}
+
+.cow-button:hover,
+.cow-button:focus {
+  background-color: #ecebeb;
+}
+
+.cow-button__icon {
+  padding: 0;
+  margin-left: 13px;
+  width: 6px;
+  height: 10px;
+  color: #d41443;
+  fill: transparent;
+}
+
 .how-made {
   padding-top: 125px;
   padding-bottom: 39px;
@@ -1668,6 +1935,7 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: center;
   }
 }
 
