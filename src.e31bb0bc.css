@@ -1419,6 +1419,10 @@ ul {
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: 30;
+  animation-fill-mode: backwards;
 }
 @media screen and (min-width: 768px) {
   .cow__title {
@@ -1475,6 +1479,11 @@ ul {
   line-height: 1.17;
   text-transform: uppercase;
   text-align: center;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 30;
+  animation-fill-mode: backwards;
 }
 @media screen and (min-width: 768px) {
   .cow-container__title {
